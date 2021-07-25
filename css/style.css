@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* --Navbar--*/
+  
+  nav ul li a {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  
+  .carousel-inner img{
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .navbar-collapse{
+    margin-left:150px; 
+  }
+ 
+ 
+  /*--footer--*/ 
+  
+  
+  .gh{
+    background-color: #212529;
+    margin: 0px;
+    padding: 0px;
+    }
+ .ft a 
+  {
+  font-size: 30px;
+   width: 5%;
+   height: 10vh;
+   background-color:#212529;
+   border-radius: 50px;
+  
+   margin:10px;
+   line-height: 35px;
+   
+  } 
+  .fa-linkedin-in{
+    color:aliceblue;
+  }
+  .fa-facebook-f{
+    color:aliceblue;
+  }
+  .fa-twitter{
+    color: aliceblue;
+  }
+  .fa-google-plus-g{
+    color:aliceblue ;
+  }
+  .ft a i{
+    transition: all 0.3s linear;
+  }
+
+  .ft a i:hover {
+    transform: scale(1.4);
+  }
+
+
+  /* login and signup form*/
+   
+  
+  .bg{
+     background: url('../img/marianna-lutkova-4PSLAKVQQ88-unsplash.jpg'); width:100%; height:80vh; 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+  
+   }
+   .form-container{
+     border:0px solid #fff; padding:30px 60px;
+     -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+     -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+     box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75) ; 
+    }
+   .submit{
+     background-color: rgb(67, 202, 39);
+     font-weight: bolder;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   .pswrd a{
+     color: rgb(102, 99, 99);
+     font-size: medium;
+     font-weight: bold;
+   }
+   .pswrd a:hover{
+     color: rgb(57, 64, 71);
+   }
+   .pswrd p{
+     font-size: small;
+   }
+
+
+    /* Booking Page */
+    .section{
+        background: url('../img/liana-mikah-RisZkNn4Z5Q-unsplash.jpg'); width:100%; min-height:100vh;
+        margin-bottom: 60px;
+      }
+      .cards{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }  
+ 
+      .card{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          box-shadow: 0px 2px 4px rgba(129, 21, 21, 0.87);
+          width: 325px;
+          text-align: center;
+          margin: 50px;
+          cursor: pointer;
+          background-color: #f2e1ce;
+      }
+      .image-section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-section img{
+          width: 100%;
+          height: 200px;
+          display: flex;
+      }
+      .description h1{
+          font-size: 20px;
+          color: #222;
+          letter-spacing: .5px;
+          margin-top: 10px;
+      }
+      .description p{
+          font-size: 15px;
+          letter-spacing: 1px;
+          
+      }
+      .description span{
+          margin-left: 8px;
+      }
+      .description del{
+          margin-left: 7px;
+          font-size: 15px;
+          color: #f2533a;
+      }
+      .button-group{
+          margin-top: 0px ;
+      }
+      .button-group .cart{
+        background-color: #ff6666;
+        font-size: 14px;
+        padding: 8px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+    .button-group .cart:hover{
+        background-color: #80002a;
+        transition: 0,6s ease;
+    }
+    .star-icons{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .star-icons i{
+        color: #db8b21;
+        padding: 0px 3px;
+        font-size: 18px;
+    }
+
+    /* Accordion */
+
+    .faq{
+      background: url('../img/iStock_uncertaintyconcept_Medium.jpg'); width:100%; min-height:100vh;
+    }
+    
+    .accordion{
+      margin-top: 40px;
+      margin-bottom: 100px;
+    }
+    .ac .form-control{
+      margin-top: 30px;
+    }
+    .accordion-item {
+      border:0px solid #fff; 
+      -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+      -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+      box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75) ;     
+     
+    }
+    .ac .dk{
+      margin-top: 0px;
+    }
+   .ac{
+     margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    text-align: center;
+    font-size:14px ;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+    }
+   .cb{
+    background: rgba(65, 59, 59, 0.2);
+   }
+    
+     
+  /* Profile */
+  
+  .abc{
+    background: url('../img/patrick-tomasso-QMDap1TAu0g-unsplash.jpg'); 
+    width: 100%;
+    height: 130vh;
+    margin-bottom: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+ .xyz{
+    background: #fff;
+    width: 620px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 15px;
+    position: relative;
+    margin-bottom: 120px;
+    box-shadow: 2px 5px 20px rgba(119, 119, 119, .5);
+  }
+  .leftbox{
+    float: left;
+    top: -5%;
+    left: 5%;
+    position: absolute;
+    width: 15%;
+    height: 110%;
+    background: #009999;
+    box-shadow: 3px 3px 10px rgba(119, 119, 119, .5);
+    border: .1em solid #fff;
+  }
+  .leftbox nav a{
+    list-style: none;
+    padding: 35px;
+    color: #fff;
+    font-size: 1.1em;
+    display: block;
+    transition: all .3s ease-in-out;
+  }
+  .leftbox nav a:hover{
+    color:#000;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+.leftbox nav a:first-child{
+  margin-top: 7px;
+}
+.leftbox nav a.active {
+color: #000;
+}
+.rightbox{
+  width: 60%;
+  margin-left: 27%;
+}
+.tabShow{
+  transition: all .5s ease-in;
+  width: 80%;
+}
+.tabShow h1{
+  font-family: cursive;
+  color: #009999;
+  font-size:xx-large;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.tabShow h2{
+  color: #777;
+  font-family: oblique;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 2px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.tabShow input{
+  border: 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #3fb6a8;
+  width: 80%;
+  font-family: oblique;
+  font-size: 17px;
+  padding: 7px 0;
+  color: #070707;
+  letter-spacing: 1px;
+}
+.btnn{
+  background-color:#009999 ;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width:50%;
+}
+.btnn:hover{
+  background-color: #037272;
+  transition: 0,6s ease;
+}
+
+/* why wondrous rentrip */
+
+.about{
+ background: url('../img/marianna-lutkova-4PSLAKVQQ88-unsplash.jpg') no-repeat; width: 100%;
+  min-height: 100vh;
+  padding-left: 50px;
+  padding-bottom: 70px;
+}
+
+
+
+.inner-container{
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size:14px ;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  background-color: rgba(2, 10, 66, 0.2);
+  -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+  box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75) ; 
+}
+.inner-container h4{
+  font-weight: bold;
+  color: #a6a9bf;
+}
+.inner-container p{
+  font-weight: bold;
+  font-size: 14px;
+  color: #898b9c;
+}
+.border{
+  height: 5px;
+  width: 20px;
+  background-color: rgba(2, 10, 66);
+}
+
+/* contact us */
+.us{
+  background: url('../img/solen-feyissa-a8j_mdusFOc-unsplash.jpg'); width:100%; height:80vh; 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+}
+
+.contact{
+  border:0px solid #fff; padding:20px 60px;
+     -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+     -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+     box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75) ; 
+     font-family: cursive;
+     font-weight: bold;
+}
+.alert{
+  font-family: sans-serif;
+}
