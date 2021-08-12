@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
               <a class="nav-link" href="faq.php">FAQ </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="rentrip">Why Wondrous RenTrip?</a>
+              <a class="nav-link" href="rentrip.php">Why Wondrous RenTrip?</a>
             </li>
              <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact Us</a>

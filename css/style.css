@@ -66,12 +66,12 @@
    
   
   .bg{
-     background: url('../img/marianna-lutkova-4PSLAKVQQ88-unsplash.jpg'); width:100%; height:80vh; 
+     background: url('../img/marianna-lutkova-4PSLAKVQQ88-unsplash.jpg'); width:100%; min-height:100vh; 
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
      position: relative;
-  
+     padding-bottom: 70px;
    }
    .form-container{
      border:0px solid #fff; padding:30px 60px;
@@ -111,7 +111,7 @@
  
       .card{
           display: flex;
-          align-items: center;
+          align-items: stretch;
           flex-direction: column;
           box-shadow: 0px 2px 4px rgba(129, 21, 21, 0.87);
           width: 325px;

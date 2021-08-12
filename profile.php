@@ -100,7 +100,7 @@
                 $query="UPDATE users SET name ='$name', email ='$email', contact_no = '$contact_no', address = '$address', city = '$city', state = '$state' WHERE username = '$username' ";
                 $result=mysqli_query($conn, $query);
                 if($result){
-                  header("location:index.php");
+                  header("location:profile.php");
                 }              
                 }  ?>
                 </div>
