@@ -1,0 +1,37 @@
+name: CI/CD Pipeline - w-rentrip
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-push:
+    name: Build and Push Docker Image
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Build Docker image
+      run: |
+        docker build -t richatrip58/w-rentrip:latest .
+        docker tag richatrip58/w-rentrip:latest richatrip58/w-rentrip:${{ github.sha }}
+
+    - name: Push Docker image
+      run: |
+        docker push richatrip58/w-rentrip:latest
+        docker push richatrip58/w-rentrip:${{ github.sha }}
+
+    - name: Print success message
+      run: |
+        echo "✅ Image pushed to Docker Hub successfully!"
+        echo "Image: richatrip58/w-rentrip:latest"
+        echo "Commit SHA tag: richatrip58/w-rentrip:${{ github.sha }}"
