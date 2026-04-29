@@ -1,19 +1,16 @@
 <?php
 /*
-This file contains database configuration assuming you are running mysql using user "root" and password ""
+  DB config reads from environment variables set by Kubernetes.
+  Falls back to localhost defaults for local dev without K8s.
 */
+define('DB_SERVER',   getenv('DB_SERVER')   ?: 'localhost');
+define('DB_USERNAME', getenv('DB_USERNAME') ?: 'root');
+define('DB_PASSWORD', getenv('DB_PASSWORD') ?: '');
+define('DB_NAME',     getenv('DB_NAME')     ?: 'w_rentrip');
 
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'w_rentrip');
-
-// Try connecting to the Database
 $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
-//Check the connection
-if($conn == false){
-    dir('Error: Cannot connect');
+if ($conn == false) {
+    die('Error: Cannot connect to database');
 }
-
 ?>

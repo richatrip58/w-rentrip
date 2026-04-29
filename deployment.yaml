@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rentrip-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: rentrip-app
+  template:
+    metadata:
+      labels:
+        app: rentrip-app
+    spec:
+      containers:
+      - name: rentrip-app
+        image: rentrip-app:v1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+        env:
+        - name: DB_SERVER
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: DB_SERVER
+        - name: DB_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: DB_NAME
+        - name: DB_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: DB_USERNAME
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: DB_PASSWORD
