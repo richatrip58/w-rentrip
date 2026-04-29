@@ -49,7 +49,7 @@ else{
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                One of the major benefits of using Wondrous RenTrip is freedom from commitments. You can easily explore bicycles, and choose the duration of relationship with every bike and once you have found "The One" you can choose our ownership model for a serious commitment.
+                                Good Question :) One of the major benefits of using Wondrous RenTrip is freedom from commitments. You can easily explore bicycles, and choose the duration of relationship with every bike and once you have found "The One" you can choose our ownership model for a serious commitment.
                             </div>
                         </div>
                     </div>
